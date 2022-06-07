@@ -15,6 +15,6 @@ RUN chmod +x /scripts/init.sh
 
 ENV INFLUXDB_HOST=influxdb
 ENV INFLUXDB_ORGANIZATION=home-assistant
-ENV SQL_HOST=mariadb
+ENV MYSQL_HOST=mariadb
 
 CMD [ "/scripts/init.sh" ]
