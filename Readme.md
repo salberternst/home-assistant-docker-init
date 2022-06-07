@@ -1,4 +1,4 @@
-# Home Assistant Init
+# Home Assistant Docker Init
 
 Initialize the home assistant container. Currently sets up secrets for:
 
