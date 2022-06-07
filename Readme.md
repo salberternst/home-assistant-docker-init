@@ -1,6 +1,9 @@
 # Home Assistant Init
 
-Initialize the home assistant container. Currently sets up influx to use the correct organization id and token.
+Initialize the home assistant container. Currently sets up secrets for:
+
+* InfluxDB to use the correct organization id and token
+* Recorder SQL database 
 
 ## Authors
 
