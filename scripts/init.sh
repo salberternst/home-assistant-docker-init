@@ -1,4 +1,4 @@
 #!/bin/sh
 
-exec ./init_influxdb.sh
-exec ./init_sql.sh
+sh ./init_influxdb.sh
+sh ./init_sql.sh
