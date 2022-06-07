@@ -21,7 +21,7 @@ if ! cat /config/secrets.yaml | yq -e .influxdb-token 2>&1 > /dev/null ; then
         --host http://$INFLUXDB_HOST:8086 \
         --org $DOCKER_INFLUXDB_INIT_ORG \
         --token $DOCKER_INFLUXDB_INIT_ADMIN_TOKEN \
-        --name home-assistant-data \
+        --name $DOCKER_INFLUXDB_INIT_BUCKET \
         --hide-headers | cut -f 1)
 
     # create a token to read and write data points to the home-assistant-data bucket
